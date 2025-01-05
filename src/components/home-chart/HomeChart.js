@@ -42,12 +42,12 @@ function HomeChart() {
   }, [dispatch, sort]);
 
   // 상세 지역 필터링 후 저장
-  useEffect(() => {
-    const filteredData = localRegion.find((local) => local.local === localName);
-    if (filteredData) {
-      setLocalFarm(filteredData.data);
-    }
-  }, [localRegion, localName]);
+  // useEffect(() => {
+  //   const filteredData = localRegion.find((local) => local.local === localName);
+  //   if (filteredData) {
+  //     setLocalFarm(filteredData.data);
+  //   }
+  // }, [localRegion, localName]);
 
   useEffect(() => {
     if (localFarm) {
