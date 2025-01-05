@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/smart-farm/static/css/main.d8ae5546.css",
-    "main.js": "/smart-farm/static/js/main.0e21de22.js",
+    "main.js": "/smart-farm/static/js/main.0929dd21.js",
     "static/media/식4.jpg": "/smart-farm/static/media/식4.53f4b088ab3673b263fa.jpg",
     "static/media/폭염.jpg": "/smart-farm/static/media/폭염.a41a7a6c18f39a83acc8.jpg",
     "static/media/유해동물.jpg": "/smart-farm/static/media/유해동물.dd0f35dd9f2ec371dce7.jpg",
@@ -47,10 +47,10 @@
     "index.html": "/smart-farm/index.html",
     "static/media/backImg.svg": "/smart-farm/static/media/backImg.fbc4d447d0b29fc6623442d0f6a27559.svg",
     "main.d8ae5546.css.map": "/smart-farm/static/css/main.d8ae5546.css.map",
-    "main.0e21de22.js.map": "/smart-farm/static/js/main.0e21de22.js.map"
+    "main.0929dd21.js.map": "/smart-farm/static/js/main.0929dd21.js.map"
   },
   "entrypoints": [
     "static/css/main.d8ae5546.css",
-    "static/js/main.0e21de22.js"
+    "static/js/main.0929dd21.js"
   ]
 }
