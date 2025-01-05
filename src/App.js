@@ -41,7 +41,7 @@ import FaqModify from "./pages/community/faq/FaqModify";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ifarm">
       <ComponentProvider>
         <Routes>
           {/* 전체 레이아웃 구조 */}
