@@ -1,0 +1,32 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 15px;
+  button {
+    padding: 15px 40px;
+    color: #000;
+    font-size: 14px;
+    background-color: var(--common-color);
+    border-radius: 5px;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    transition: 0.3s all ease;
+
+    &:hover {
+      background-color: var(--second-color);
+    }
+  }
+
+  .form_error {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #000;
+    font-size: 13px;
+    background-color: var(--second-color);
+    border: 1px solid var(--second-color);
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 16%) 0 3px 6px, rgb(0 0 0 / 23%) 0 3px 6px;
+  }
+}

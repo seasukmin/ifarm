@@ -1,0 +1,47 @@
+@import '/src/scss/mixins.scss';
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+
+  .name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+
+    .buttons {
+      @include flexCenter();
+      // padding: 4px 8px;
+      width: 24px;
+      height: 24px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+
+      span {
+        font-size: 16px;
+        color: #ccc;
+      }
+    }
+  }
+
+  .operating {
+    text-align: center;
+
+    .preview {
+      font-size: 24px;
+    }
+
+    .settingForm {
+      display: flex;
+      gap: 8px;
+      > input {
+        border: 1px solid #ccc;
+        padding: 8px;
+      }
+    }
+  }
+}

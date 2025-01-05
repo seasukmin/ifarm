@@ -1,0 +1,290 @@
+@import "/src/scss/mixins.scss";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 60px;
+  flex-direction: column;
+  .main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 900px;
+    padding: 10px;
+
+    select {
+      padding: 10px;
+      border: none;
+      border-bottom: 2px solid var(--common-color);
+      margin-bottom: 30px;
+      font-size: 20px;
+      width: 300px;
+    }
+
+    .thead {
+      font-size: 23px;
+      color: var(--accent-color);
+      tr {
+        th {
+          padding: 20px;
+        }
+      }
+    }
+
+    .item {
+      box-shadow: var(--box-shadow);
+      td {
+        padding: 20px 0;
+        margin-top: 10px;
+      }
+    }
+  }
+  .mainBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+td {
+  text-align: center;
+}
+
+.button {
+  border: 2px solid var(--common-color);
+  padding: 10px 8px;
+  margin: 8px;
+  margin-left: 12px;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: var(--hover-color);
+    color: #fff;
+  }
+}
+
+/* 작은 모니터 */
+@media (max-width: 1200px) {
+  .container {
+    .payment {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      padding: 10px;
+
+      select {
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid var(--common-color);
+        margin-bottom: 30px;
+        font-size: 20px;
+        width: 300px;
+      }
+
+      .thead {
+        font-size: 14px;
+        tr {
+          th {
+            padding: 20px 0;
+            font-size: 18px;
+            margin-bottom: 8px;
+          }
+        }
+      }
+
+      .item {
+        td {
+          padding: 10px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .button {
+    padding: 10px 6px;
+    font-size: 16px;
+  }
+}
+
+/* 태블릿 */
+@media (max-width: 992px) {
+  .container {
+    .payment {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      padding: 10px;
+
+      select {
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid var(--common-color);
+        margin-bottom: 30px;
+        font-size: 20px;
+        width: 300px;
+      }
+
+      .thead {
+        font-size: 14px;
+        tr {
+          th {
+            padding: 20px 0;
+            font-size: 18px;
+            margin-bottom: 8px;
+          }
+        }
+      }
+
+      .item {
+        td {
+          padding: 10px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .button {
+    padding: 10px 6px;
+    font-size: 16px;
+  }
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 60px;
+    flex-direction: column;
+    .main {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .payment {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      padding: 10px;
+
+      select {
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid var(--common-color);
+        margin-bottom: 30px;
+        font-size: 20px;
+        width: 300px;
+      }
+
+      .thead {
+        font-size: 14px;
+        tr {
+          th {
+            padding: 10px 0;
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .item {
+        td {
+          padding: 10px;
+          font-size: 14px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  td {
+    text-align: center;
+  }
+
+  .button {
+    padding: 6px;
+    margin: 0;
+    margin-left: 0;
+    font-size: 12px;
+  }
+}
+
+/* 작은모바일 */
+@media (max-width: 576px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 60px;
+    flex-direction: column;
+    .main {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .payment {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      padding: 10px;
+
+      select {
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid var(--common-color);
+        margin-bottom: 30px;
+        font-size: 20px;
+        width: 100px;
+      }
+
+      .thead {
+        font-size: 14px;
+        tr {
+          th {
+            padding: 0;
+            font-size: 10px;
+            margin-bottom: 8px;
+          }
+        }
+      }
+
+      .item {
+        td {
+          padding: 10px;
+          font-size: 10px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  td {
+    text-align: center;
+  }
+
+  .button {
+    padding: 6px 0;
+    margin: 0;
+    margin-left: 0;
+    font-size: 8px;
+  }
+}

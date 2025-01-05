@@ -1,0 +1,187 @@
+@import "/src/scss/mixins.scss";
+.menu {
+  .search {
+    @include flexCenter();
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+
+    input {
+      // width: 100%;
+      border: 2px solid #ececec;
+      font-size: 18px;
+      font-weight: 300;
+      padding: 10px;
+      border-radius: 8px;
+
+      &::placeholder {
+        color: #c2c2c2;
+        transition: 0.5s;
+      }
+
+      &:hover {
+        border: 2px solid var(--common-color);
+        &::placeholder {
+          color: var(--common-color);
+          opacity: 0.5;
+        }
+      }
+
+      &:focus {
+        border: 2px solid var(--hover-color);
+
+        &::placeholder {
+          color: var(--hover-color);
+          opacity: 0.5;
+        }
+      }
+    }
+    button {
+      display: flex;
+      flex: none;
+      @include packedBtn($padding: 9px 20px);
+      border-radius: 8px;
+      font-size: 20px;
+
+      > span {
+        @include flexCenter();
+        gap: 5px;
+        > svg {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .menu_bar {
+    display: flex;
+
+    width: 900px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    background-color: var(--board-color);
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .menu_number {
+    width: 40px;
+  }
+  .title {
+    width: 70%;
+    text-align: center;
+  }
+  .name {
+    width: 30%;
+    text-align: center;
+  }
+  .date {
+    width: 150px;
+    text-align: center;
+  }
+  .check {
+    width: 15%;
+    text-align: center;
+  }
+  .menu_list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+//작은 모니터
+@media (max-width: 1200px) {
+  .menu {
+    width: 100%;
+    font-size: 14px;
+    .menu_bar {
+      width: 100%;
+      font-size: 16px;
+    }
+    .title {
+      width: 70%;
+      text-align: center;
+
+      p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 300px;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .menu {
+    width: 100%;
+    font-size: 14px;
+    .menu_bar {
+      width: 100%;
+      font-size: 16px;
+    }
+    .title {
+      width: 70%;
+      text-align: center;
+
+      // p {
+      //   white-space: nowrap;
+      //   overflow: hidden;
+      //   text-overflow: ellipsis;
+      //   max-width: 200px;
+      // }
+    }
+  }
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .menu {
+    font-size: 14px;
+    .menu_bar {
+      width: 100%;
+      font-size: 16px;
+    }
+    .title {
+      width: 70%;
+      text-align: center;
+
+      p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 200px;
+      }
+    }
+  }
+}
+
+/* 작은모바일 */
+@media (max-width: 576px) {
+  .menu {
+    input {
+      width: 100%;
+    }
+
+    .menu_bar {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #e2e2e2;
+      border-radius: 10px;
+      background-color: var(--board-color);
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+    .title {
+      width: 70%;
+      text-align: center;
+
+      p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100px;
+      }
+    }
+  }
+}

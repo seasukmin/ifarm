@@ -1,0 +1,144 @@
+.requestForm {
+  margin: 24px 0;
+  padding: 30px;
+
+  h3 {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+
+  div {
+    margin-bottom: 10px;
+  }
+}
+
+.userContainer {
+  border: 2px solid var(--hover-color);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.user {
+  margin-bottom: 20px;
+  div {
+    display: flex;
+  }
+}
+
+.farmName {
+  display: flex;
+}
+
+.farm {
+  padding: 10px;
+
+  input {
+    border-bottom: 1px solid var(--hover-color);
+  }
+}
+
+.cropType {
+  div {
+    display: flex;
+  }
+
+  select {
+    border: none;
+    border-bottom: 1px solid var(--hover-color);
+    font-size: 18px;
+  }
+}
+
+.option {
+  display: flex;
+
+  div {
+    // margin: 10px;
+  }
+}
+
+.btn {
+  button {
+    padding: 20px;
+  }
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+
+  > button {
+    padding: 16px 48px;
+    font-size: 20px;
+    border-radius: 10px;
+
+    &.submit {
+      background-color: var(--common-color);
+
+      &:hover {
+        background-color: var(--hover-color);
+        color: var(--main-color);
+      }
+    }
+
+    &.cancel {
+      background-color: #eee;
+
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+}
+
+// 작은 모니터
+@media (max-width: 1200px) {
+  .option {
+    gap: 24px;
+  }
+}
+
+// 태블릿
+@media (max-width: 992px) {
+  .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .option {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+// 모바일
+@media (max-width: 768px) {
+  .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .option {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+// 작은모바일
+@media (max-width: 576px) {
+  .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .option {
+    display: flex;
+    flex-direction: column;
+  }
+}

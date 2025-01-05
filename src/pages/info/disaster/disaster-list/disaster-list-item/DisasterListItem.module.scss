@@ -1,0 +1,72 @@
+.main {
+  .written {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ececec;
+    color: #808080;
+
+    .btn {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 8px;
+      align-items: center;
+
+      .written_btn {
+        display: flex;
+        border: 2px solid var(--common-color);
+        padding: 10px;
+        border-radius: 8px;
+        &:hover {
+          background-color: var(--hover-color);
+        }
+        button {
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .inventory {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+
+    button {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      &:hover {
+        color: var(--common-color);
+      }
+    }
+  }
+  .main_text {
+    // border-bottom: 2px solid var(--common-color);
+
+    margin-top: 20px;
+    .main_title {
+      border: 1px solid #ececec;
+      border-radius: 8px;
+      // margin-top: 20px;
+      margin: 10px;
+      padding: 10px 8px;
+    }
+
+    .bottom {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+      .bottom_title {
+        border-bottom: 2px solid #ececec;
+        white-space: pre-wrap; /* 줄바꿈과 공백을 모두 유지 */
+        width: 100%;
+        height: 400px;
+        padding: 10px 8px;
+      }
+    }
+  }
+}

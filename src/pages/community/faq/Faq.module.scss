@@ -1,0 +1,64 @@
+@import "/src/scss/mixins.scss";
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    margin-bottom: 40px;
+  }
+}
+
+.editButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.faq {
+  border: 1px solid #ccc;
+  max-width: 960px;
+  border-radius: 16px;
+  // box-shadow: 0 4px 8px rgba(0 0 0 / 20%);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 20px;
+  padding: 0 8px;
+  font-weight: 400;
+}
+
+.faqIntro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+
+.description {
+  border-top: 1px solid #d9d9d9;
+  padding: 16px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.likes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.abled {
+  opacity: 1;
+  display: inline;
+}
+
+.disabled {
+  opacity: 0;
+  pointer-events: none;
+}

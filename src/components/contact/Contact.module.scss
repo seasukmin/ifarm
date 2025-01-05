@@ -1,0 +1,110 @@
+@mixin callTooltip() {
+  &::before {
+    content: '';
+    position: absolute;
+    right: -15px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--main-color);
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: '042-123-1234';
+    position: absolute;
+    right: -140px;
+    padding: 8px;
+    width: 230%;
+    border-radius: 8px;
+    background-color: var(--main-color);
+    color: #333;
+  }
+}
+
+.contact {
+  position: fixed;
+  bottom: 5%;
+  left: 1%;
+  z-index: 10;
+
+  .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 1;
+
+    button {
+      position: relative;
+      background-color: var(--common-color);
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding: 10px;
+      border-radius: 9999px;
+      color: #fff;
+
+      svg {
+        font-size: 30px;
+      }
+
+      &:hover {
+        background-color: var(--hover-color);
+      }
+
+      &[class*='goto']:hover::before {
+        content: '';
+        position: absolute;
+        right: -15px;
+        width: 8px;
+        height: 8px;
+        background-color: var(--main-color);
+        transform: rotate(45deg);
+      }
+
+      &.gotoMyFarm:hover::after {
+        content: '내 농장 관리';
+        color: #333;
+      }
+      &.gotoSimul:hover::after {
+        content: '시뮬레이션';
+        color: #333;
+      }
+      &.gotoRequest:hover::after {
+        content: '견적의뢰';
+        color: #333;
+      }
+
+      &[class*='goto']:hover::after {
+        position: absolute;
+        right: -100px;
+        padding: 8px;
+        width: 150%;
+        border-radius: 8px;
+        background-color: var(--main-color);
+      }
+
+      &.call:hover {
+        @include callTooltip();
+      }
+    }
+  }
+  /* 작은 모니터 */
+  @media (max-width: 1200px) {
+  }
+  /* 태블릿 */
+  @media (max-width: 992px) {
+  }
+
+  /* 모바일 */
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  /* 작은모바일 */
+  @media (max-width: 576px) {
+  }
+}
+
+.showTooltip {
+  @include callTooltip();
+}

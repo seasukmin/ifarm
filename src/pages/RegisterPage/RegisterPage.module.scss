@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 0 3% 0;
+
+  h1 {
+    font-weight: 500;
+    margin-bottom: 25%;
+  }
+  a {
+    &:hover {
+      color: var(--common-color);
+      text-decoration: underline;
+    }
+  }
+  span {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  p {
+    display: block;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .googleBt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 5% 2% 5%;
+    background-color: beige;
+    border-radius: 10px;
+    gap: 10px;
+    box-shadow: var(--box-shadow);
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  .searchText {
+    display: flex;
+    gap: 20px;
+  }
+}
+.modaleContainer {
+  margin: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

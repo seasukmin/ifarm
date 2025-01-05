@@ -1,0 +1,295 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .button_items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    // width: 100px;
+    .button_item {
+      border: 3px solid var(--common-color);
+      font-size: 20px;
+      padding: 10px 20px;
+      width: 180px;
+      height: 100%;
+      border-radius: 8px;
+
+      &.active {
+        background-color: var(--hover-color);
+        color: white;
+        border-color: var(--common-color);
+      }
+
+      &:hover {
+        background-color: var(--hover-color);
+        color: #fff;
+      }
+    }
+  }
+
+  .measures {
+    display: flex;
+    border: 3px solid var(--common-color);
+    border-radius: 8px;
+    flex-direction: column;
+    margin: 10px 0;
+    gap: 20px;
+    text-align: start;
+    padding: 12px 20px;
+    position: relative;
+    h2 {
+      text-align: start;
+      // padding: 10px;
+      color: var(--hover-color);
+      font-weight: 500;
+    }
+    .measures_title {
+      display: flex;
+
+      h1 {
+        cursor: pointer;
+        text-align: start;
+        padding: 10px;
+        font-family: var(--main-font);
+
+        &:hover {
+          color: var(--hover-color);
+        }
+        &:hover + img {
+          position: absolute;
+          left: 100px;
+          top: 50px;
+          display: block;
+        }
+      }
+      img {
+        width: 400px;
+        height: 300px;
+        display: none;
+        z-index: 10;
+        padding: 10px;
+        border-radius: 18px;
+      }
+    }
+    .measures_item {
+      margin-bottom: 20px;
+      ul {
+        display: block;
+
+        li {
+          width: 100%;
+          text-align: start;
+          list-style: none;
+          box-shadow: none;
+          border: none;
+          padding: 8px 0;
+          margin: 0;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+/* 작은 모니터 */
+@media (max-width: 1200px) {
+  .main {
+    width: 100%;
+    align-items: center;
+
+    .button_items {
+      gap: 6px;
+      .button_item {
+        font-size: 20px;
+        padding: 6px 0;
+        width: 120px;
+      }
+    }
+
+    .measures {
+      width: 100%;
+      display: flex;
+      gap: 0.5rem;
+      .measures_title {
+        h1 {
+          padding: 0px;
+          font-size: 30px;
+
+          &:hover + img {
+            left: 50px;
+            top: 40px;
+          }
+        }
+        img {
+          width: 350px;
+          height: 200px;
+        }
+      }
+      .measures_item {
+        h2 {
+          font-size: 24px;
+        }
+        margin-bottom: 8px;
+        ul {
+          li {
+            padding: 4px 0;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+/* 태블릿 */
+@media (max-width: 992px) {
+  .main {
+    width: 100%;
+    align-items: center;
+
+    .button_items {
+      gap: 6px;
+      .button_item {
+        font-size: 20px;
+        padding: 6px 0;
+        width: 120px;
+      }
+    }
+
+    .measures {
+      width: 100%;
+      display: flex;
+      gap: 0.5rem;
+      .measures_title {
+        h1 {
+          padding: 0px;
+          font-size: 30px;
+
+          &:hover + img {
+            left: 50px;
+            top: 40px;
+          }
+        }
+        img {
+          width: 350px;
+          height: 200px;
+        }
+      }
+      .measures_item {
+        h2 {
+          font-size: 24px;
+        }
+        margin-bottom: 8px;
+        ul {
+          li {
+            padding: 4px 0;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 모바일
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+    align-items: center;
+
+    .button_items {
+      gap: 6px;
+      .button_item {
+        font-size: 18px;
+        padding: 6px 0;
+        width: 120px;
+      }
+    }
+
+    .measures {
+      width: 100%;
+      display: flex;
+      gap: 0.5rem;
+      .measures_title {
+        h1 {
+          padding: 0px;
+          font-size: 30px;
+
+          &:hover + img {
+            left: 50px;
+            top: 40px;
+          }
+        }
+        img {
+          width: 350px;
+          height: 200px;
+        }
+      }
+      .measures_item {
+        h2 {
+          font-size: 24px;
+        }
+        margin-bottom: 8px;
+        ul {
+          li {
+            padding: 4px 0;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 작은 모바일
+@media (max-width: 576px) {
+  .main {
+    width: 100%;
+    align-items: center;
+
+    .button_items {
+      width: 300px;
+      gap: 3px;
+      .button_item {
+        font-size: 11px;
+        padding: 6px 0;
+        width: 100%;
+      }
+    }
+
+    .measures {
+      width: 100%;
+      display: flex;
+      gap: 0.5rem;
+      .measures_title {
+        h1 {
+          padding: 0px;
+          font-size: 26px;
+
+          &:hover + img {
+            left: 15px;
+            top: 40px;
+          }
+        }
+        img {
+          width: 250px;
+          height: 200px;
+        }
+      }
+      .measures_item {
+        h2 {
+          font-size: 24px;
+        }
+        margin-bottom: 8px;
+        ul {
+          li {
+            padding: 4px 0;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

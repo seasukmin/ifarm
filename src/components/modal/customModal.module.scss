@@ -1,0 +1,54 @@
+@import '/src/scss/mixins.scss';
+
+.Modal {
+  @include flexCenter();
+
+  .customModal {
+    background-color: white;
+    // width: 50%;
+    // height: 300px;
+    display: flex;
+    flex-direction: column;
+    // border: 10px solid red;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    width: fit-content;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px 4px;
+  margin: 0 10px;
+  border-top: 1px solid #eee;
+}
+.outBtn {
+  color: var(--common-color);
+  font-size: 18px;
+  padding: 4px 10px;
+
+  &:hover {
+    // background-color: var(--hover-color);
+    color: var(--hover-color);
+  }
+}
+.cancelBtn {
+  font-size: 18px;
+  padding: 10px;
+
+  &:hover {
+    color: var(--hover-color);
+  }
+}

@@ -1,0 +1,55 @@
+// @media (max-width: 1024px) {
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul {
+      gap: 10px;
+    }
+  }
+}
+// }
+
+@media (max-width: 1200px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      ul {
+        gap: 10px;
+      }
+    }
+  }
+}
+/* 태블릿 */
+@media (max-width: 992px) {
+}
+
+// 모바일
+@media (max-width: 768px) {
+  .list {
+    width: 500px;
+    display: flex;
+  }
+}
+
+//작은모바일
+@media (max-width: 576px) {
+  .list {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    ul {
+      gap: 0px;
+    }
+  }
+}
