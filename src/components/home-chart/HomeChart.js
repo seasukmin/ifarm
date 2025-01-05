@@ -42,12 +42,16 @@ function HomeChart() {
   }, [dispatch, sort]);
 
   // 상세 지역 필터링 후 저장
-  // useEffect(() => {
-  //   const filteredData = localRegion.find((local) => local.local === localName);
-  //   if (filteredData) {
-  //     setLocalFarm(filteredData.data);
-  //   }
-  // }, [localRegion, localName]);
+  useEffect(() => {
+    if (localRegion && localRegion.length > 0) {
+      const filteredData = localRegion.find(
+        (local) => local.local === localName
+      );
+      if (filteredData) {
+        setLocalFarm(filteredData.data);
+      }
+    }
+  }, [localRegion, localName]);
 
   useEffect(() => {
     if (localFarm) {
@@ -72,14 +76,15 @@ function HomeChart() {
 
   // 사용자 위치 지역 클릭
   useEffect(() => {
-    if (userLocation) {
-      const closestRegion = localRegion.find((local) =>
-        d3.geoContains(local.geometry, [
-          userLocation.longitude,
-          userLocation.latitude,
-        ])
+    if (userLocation && localRegion && localRegion.length > 0) {
+      const closestRegion = localRegion.find(
+        (local) =>
+          local.geometry &&
+          d3.geoContains(local.geometry, [
+            userLocation.longitude,
+            userLocation.latitude,
+          ])
       );
-
       if (closestRegion) {
         handleLocalClick(closestRegion.local); // 지역 클릭 처리
       }
