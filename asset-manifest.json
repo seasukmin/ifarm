@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/smart-farm/static/css/main.fc9c7152.css",
-    "main.js": "/smart-farm/static/js/main.a24391ed.js",
+    "main.css": "/smart-farm/static/css/main.d8ae5546.css",
+    "main.js": "/smart-farm/static/js/main.0e21de22.js",
     "static/media/식4.jpg": "/smart-farm/static/media/식4.53f4b088ab3673b263fa.jpg",
     "static/media/폭염.jpg": "/smart-farm/static/media/폭염.a41a7a6c18f39a83acc8.jpg",
     "static/media/유해동물.jpg": "/smart-farm/static/media/유해동물.dd0f35dd9f2ec371dce7.jpg",
@@ -46,11 +46,11 @@
     "static/media/closeImg.svg": "/smart-farm/static/media/closeImg.e5a3bc998f57074a3d04727da972d177.svg",
     "index.html": "/smart-farm/index.html",
     "static/media/backImg.svg": "/smart-farm/static/media/backImg.fbc4d447d0b29fc6623442d0f6a27559.svg",
-    "main.fc9c7152.css.map": "/smart-farm/static/css/main.fc9c7152.css.map",
-    "main.a24391ed.js.map": "/smart-farm/static/js/main.a24391ed.js.map"
+    "main.d8ae5546.css.map": "/smart-farm/static/css/main.d8ae5546.css.map",
+    "main.0e21de22.js.map": "/smart-farm/static/js/main.0e21de22.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc9c7152.css",
-    "static/js/main.a24391ed.js"
+    "static/css/main.d8ae5546.css",
+    "static/js/main.0e21de22.js"
   ]
 }
