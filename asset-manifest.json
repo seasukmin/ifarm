@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ifarm/static/css/main.470e6567.css",
-    "main.js": "/ifarm/static/js/main.5e291921.js",
+    "main.js": "/ifarm/static/js/main.0744e449.js",
     "static/media/식4.jpg": "/ifarm/static/media/식4.53f4b088ab3673b263fa.jpg",
     "static/media/폭염.jpg": "/ifarm/static/media/폭염.a41a7a6c18f39a83acc8.jpg",
     "static/media/유해동물.jpg": "/ifarm/static/media/유해동물.dd0f35dd9f2ec371dce7.jpg",
@@ -47,10 +47,10 @@
     "index.html": "/ifarm/index.html",
     "static/media/backImg.svg": "/ifarm/static/media/backImg.fbc4d447d0b29fc6623442d0f6a27559.svg",
     "main.470e6567.css.map": "/ifarm/static/css/main.470e6567.css.map",
-    "main.5e291921.js.map": "/ifarm/static/js/main.5e291921.js.map"
+    "main.0744e449.js.map": "/ifarm/static/js/main.0744e449.js.map"
   },
   "entrypoints": [
     "static/css/main.470e6567.css",
-    "static/js/main.5e291921.js"
+    "static/js/main.0744e449.js"
   ]
 }
